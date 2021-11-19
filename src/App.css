@@ -1,0 +1,101 @@
+/*
+Table of Contents
+1.font import
+2.General Styling
+3.profile Styling
+4. Images, Buttons Styling
+5. Inputs styling
+*/
+
+/* 1. Raleway font import */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* 2. General Styling */
+.App{
+font-family: "Raleway", sans-serif;
+}
+.App-head{
+  text-align: center;
+}
+
+/* 3. Profile Styling */
+.Profile{
+  margin-left: 2em;
+}
+.Profile-info{
+  clear: right;
+}
+.Profile-name{
+  text-transform: uppercase;
+  font-weight: 1500;
+}
+.Tag-names{
+  display: inline-block;
+  margin:.5em;
+  background-color: lightgray;
+  padding: 1em;
+}
+.Grades-toggle{
+  display:block;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+.Profile-grades{
+  display: none;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* 4. Image, Buttons Styling */
+.Profile-pic{
+  border: 1px solid grey;
+  border-radius: 50%;
+  float: left;
+  height: 110px;
+  margin: 1.2em;
+}
+.Button{
+  float: right;
+  margin-right: 2em;
+  border: none;
+  background-color: none;
+  font-size: 2em;
+  width:50px;
+  height: 50px;
+}
+
+/* 5. Input Styling */
+.Profile-secondary{
+  padding-left:10.5em;
+  line-height: .5;
+}
+.App-search-name, .App-search-tag{
+  border: none;
+  padding-left: 1em;
+  font-size: 2em;
+  letter-spacing: 0.75px;
+  font-family: 'Raleway' sans-serif;
+  text-decoration: none;
+  display: block;
+}
+.App-search-tag{
+  margin-top:1em;
+}
+.App-search:focus{
+  border-color: none;
+  box-shadow: none;
+}
+input:focus{
+  outline: none;
+}
+.Profile-tag{
+  border: none;
+  border-bottom: 2px solid grey;
+  padding-bottom: .5em;
+  margin-top:1em;
+  opacity:.5;
+}
+.Profile-tag:focus{
+  opacity: 1;
+}
+/* End of Stylings */
