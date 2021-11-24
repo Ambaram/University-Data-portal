@@ -29,6 +29,9 @@ font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 1500;
 }
+.No-tag{
+  display: none;
+}
 .Tag-names{
   display: inline-block;
   margin:.5em;
@@ -64,10 +67,27 @@ font-family: "Raleway", sans-serif;
   height: 50px;
 }
 
+.Cancel-search-name, .Cancel-search-tag{
+  margin-right: 2em;
+  border: none;
+  background-color: none;
+  font-size: 2em;
+}
+
 /* 5. Input Styling */
 .Profile-secondary{
   padding-left:10.5em;
   line-height: .5;
+}
+.Search, .Tag{
+  display: flex;
+  justify-content: space-between;
+}
+.Tag{
+  margin-top:1.5em
+}
+.No-input{
+  display: none;
 }
 .App-search-name, .App-search-tag{
   border: none;
@@ -77,9 +97,7 @@ font-family: "Raleway", sans-serif;
   font-family: 'Raleway' sans-serif;
   text-decoration: none;
   display: block;
-}
-.App-search-tag{
-  margin-top:1em;
+  width:90%
 }
 .App-search:focus{
   border-color: none;
@@ -97,5 +115,9 @@ input:focus{
 }
 .Profile-tag:focus{
   opacity: 1;
+}
+
+.Tag-input-hidded{
+  display: none;
 }
 /* End of Stylings */
